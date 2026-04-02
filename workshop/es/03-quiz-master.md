@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/03-quiz-master.md" -->
 # Parte 3: Quiz Master Personalizado
 
-[🎮 Demo en Vivo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Guía del Lab](GUIDE.md) • [← Parte 2](02-design.md)
+[🎮 Demo en Vivo](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guía del Lab](GUIDE.md) • [← Parte 2](02-design.md)
 
 ---
 

@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/05-complete.md" -->
 # 🎉 ¡Workshop Completo!
 
-[🎮 Jugar](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Guía del Lab](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Parte 4](04-multi-agent.md)
+[🎮 Jugar](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guía del Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← Parte 4](04-multi-agent.md)
 
 ---
 

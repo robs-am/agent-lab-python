@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/00-overview.md" -->
 # 🎮 VS Code GitHub Copilot Agent Lab
 
-[🎮 Jugar](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Guía del Lab](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../../README.es.md)
+[🎮 Jugar](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guía del Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../../README.es.md)
 
 ---
 

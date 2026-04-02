@@ -3,7 +3,7 @@
 
 Juego de Bingo Social para encuentros presenciales. ¡Encuentra personas que coincidan con las preguntas y consigue 5 en línea!
 
-🎮 **[Jugar](https://madebygps.github.io/vscode-github-copilot-agent-lab/)** • 📚 **[Ver Guía del Lab](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/)**
+🎮 **[Jugar](https://copilot-dev-days.github.io/agent-lab-python/)** • 📚 **[Ver Guía del Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/)**
 
 ---
 
@@ -11,11 +11,11 @@ Juego de Bingo Social para encuentros presenciales. ¡Encuentra personas que coi
 
 | Parte | Título |
 |-------|--------|
-| [**00**](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=00-overview) | Descripción General & Lista de Verificación |
-| [**01**](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=01-setup) | Configuración & Ingeniería de Contexto |
-| [**02**](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=02-design) | Frontend Design-First |
-| [**03**](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=03-quiz-master) | Quiz Master Personalizado |
-| [**04**](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=04-multi-agent) | Desarrollo Multi-Agente |
+| [**00**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=00-overview) | Descripción General & Lista de Verificación |
+| [**01**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=01-setup) | Configuración & Ingeniería de Contexto |
+| [**02**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=02-design) | Frontend Design-First |
+| [**03**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=03-quiz-master) | Quiz Master Personalizado |
+| [**04**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=04-multi-agent) | Desarrollo Multi-Agente |
 
 > 📝 Las guías del lab también están disponibles en la carpeta [`workshop/es/`](workshop/es/) para lectura offline.
 

@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/02-design.md" -->
 # Parte 2: Frontend Design-First
 
-[🎮 Demo en Vivo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Guía del Lab](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Parte 1](01-setup.md)
+[🎮 Demo en Vivo](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guía del Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← Parte 1](01-setup.md)
 
 ---
 

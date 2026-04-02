@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/GUIDE.md" -->
 # Soc Ops — VS Code GitHub Copilot Agent Lab
 
-[🎮 Demo en Vivo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Guía del Lab](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../../README.es.md)
+[🎮 Demo en Vivo](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guía del Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../../README.es.md)
 
 ---
 

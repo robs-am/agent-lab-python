@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/01-setup.md" -->
 # Parte 1: Configuração & Engenharia de Contexto
 
-[🎮 Demo ao Vivo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Guia do Lab](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Visão Geral](00-overview.md)
+[🎮 Demo ao Vivo](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guia do Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← Visão Geral](00-overview.md)
 
 ---
 

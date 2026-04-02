@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/04-multi-agent.md" -->
 # Parte 4: Desenvolvimento Multi-Agente
 
-[🎮 Demo ao Vivo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Guia do Lab](GUIDE.md) • [← Parte 3](03-quiz-master.md)
+[🎮 Demo ao Vivo](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guia do Lab](GUIDE.md) • [← Parte 3](03-quiz-master.md)
 
 ---
 
