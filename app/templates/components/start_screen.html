@@ -1,25 +1,81 @@
-<div id="game-container">
-<div class="flex flex-col items-center justify-center min-h-full p-6 bg-gray-50">
-    <div class="text-center max-w-sm">
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">Soc Ops</h1>
-        <p class="text-lg text-gray-600 mb-8">Social Bingo</p>
+<div id="game-container" class="page-shell">
+    <div class="editorial-stage hero-layout">
+        <section class="panel hero-card">
+            <div>
+                <div class="hero-meta">Live social game / agent lab</div>
+                <h1 class="hero-headline">Soc <span class="headline-accent">Ops</span></h1>
+                <p class="hero-copy">
+                    An in-person social bingo mission for mixers, workshops, and team rooms.
+                    Find the people behind each prompt, mark the board, and build momentum fast.
+                </p>
+                <div class="hero-tags">
+                    <span class="tag">5 x 5 board</span>
+                    <span class="tag-quiet">Fast to learn</span>
+                    <span class="tag-quiet">Built for remixing</span>
+                </div>
+            </div>
 
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
-            <h2 class="font-semibold text-gray-800 mb-3">How to play</h2>
-            <ul class="text-left text-gray-600 text-sm space-y-2">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
-            </ul>
+            <div>
+                <div class="hero-actions">
+                    <button
+                        hx-post="/start"
+                        hx-target="#game-container"
+                        hx-swap="outerHTML"
+                        class="primary-cta">
+                        Start Game
+                    </button>
+                    <div class="secondary-cta">Workshop-ready starter</div>
+                </div>
+                <p class="hero-note">
+                    Part game, part prototype canvas. Use it as-is for a room full of strangers or as a small app for design, prompt, and agent experiments.
+                </p>
+            </div>
+        </section>
+
+        <div>
+            <section class="panel side-card">
+                <div class="side-meta">How to play</div>
+                <h2 class="section-title">How to play</h2>
+                <ul class="checklist">
+                    <li>
+                        <span class="check-mark">01</span>
+                        <span>Find people who match the questions on the board.</span>
+                    </li>
+                    <li>
+                        <span class="check-mark">02</span>
+                        <span>Tap a square when you find a real match.</span>
+                    </li>
+                    <li>
+                        <span class="check-mark">03</span>
+                        <span>Get 5 in a row to hit bingo and keep the room moving.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="panel side-card lab-card">
+                <div class="side-meta">Copilot lab context</div>
+                <p class="panel-copy">
+                    The same app doubles as a lightweight lab for FastAPI, HTMX, prompt design, and multi-agent iteration inside VS Code.
+                </p>
+                <div class="lab-grid">
+                    <div class="lab-stat">
+                        <strong>FastAPI</strong>
+                        <span>Thin routes, server-rendered UI.</span>
+                    </div>
+                    <div class="lab-stat">
+                        <strong>HTMX</strong>
+                        <span>Interactive states without a client framework.</span>
+                    </div>
+                    <div class="lab-stat">
+                        <strong>Ruff</strong>
+                        <span>Lint gates for a small but strict codebase.</span>
+                    </div>
+                    <div class="lab-stat">
+                        <strong>Pytest</strong>
+                        <span>Rules and routes covered with fast checks.</span>
+                    </div>
+                </div>
+            </section>
         </div>
-
-        <button
-            hx-post="/start"
-            hx-target="#game-container"
-            hx-swap="outerHTML"
-            class="w-full bg-accent text-white font-semibold py-4 px-8 rounded-lg text-lg active:bg-accent-light transition-colors">
-            Start Game
-        </button>
     </div>
-</div>
 </div>

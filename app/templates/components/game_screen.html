@@ -1,37 +1,91 @@
-<div id="game-container">
-<div class="flex flex-col min-h-full bg-gray-50">
-    <!-- Header -->
-    <header class="flex items-center justify-between p-3 bg-white border-b border-gray-200">
-        <button
-            hx-post="/reset"
-            hx-target="#game-container"
-            hx-swap="outerHTML"
-            class="text-gray-500 text-sm px-3 py-1.5 rounded active:bg-gray-100">
-            ← Back
-        </button>
-        <h1 class="font-bold text-gray-900">Soc Ops</h1>
-        <div class="w-16"></div>
-    </header>
+{% set marked_count = session.board | selectattr("is_marked") | list | length %}
+<div id="game-container" class="page-shell">
+    <div class="editorial-stage mission-shell">
+        <section class="panel mission-card">
+            <div class="mission-header">
+                <div>
+                    <div class="mission-meta">Mission live / room scan active</div>
+                    <h1 class="mission-title">Soc Ops</h1>
+                    <p class="mission-copy">
+                        Tap a square when you find someone who genuinely matches it. The goal is not speed alone.
+                        It is better conversation density, better introductions, and a board that fills because people actually connect.
+                    </p>
+                </div>
 
-    <!-- Instructions -->
-    <p class="text-center text-gray-500 text-sm py-2 px-4">
-        Tap a square when you find someone who matches it.
-    </p>
+                <button
+                    hx-post="/reset"
+                    hx-target="#game-container"
+                    hx-swap="outerHTML"
+                    class="back-link">
+                    ← Back
+                </button>
+            </div>
 
-    <!-- Bingo indicator -->
-    {% if session.has_bingo %}
-    <div class="bg-amber-100 text-amber-800 text-center py-2 font-semibold text-sm">
-        🎉 BINGO! You got a line!
+            <div class="mission-tags">
+                <span class="status-pill">{{ marked_count }} marked</span>
+                <span class="status-pill">25 prompts total</span>
+                <span class="status-pill {% if session.has_bingo %}status-pill-hot{% endif %}">
+                    {% if session.has_bingo %}BINGO achieved{% else %}Searching for 5 in a row{% endif %}
+                </span>
+            </div>
+        </section>
+
+        <div class="mission-layout">
+            <section>
+                {% if session.has_bingo %}
+                <div class="panel banner-card">
+                    <div class="banner-icon">5</div>
+                    <div>
+                        <p class="section-title">Line completed</p>
+                        <p class="panel-copy">BINGO! You got a line. Keep the momentum and see if you can map more of the room.</p>
+                    </div>
+                </div>
+                {% endif %}
+
+                <section class="panel board-card">
+                    <div class="board-wrap">
+                        <p class="board-section-title">Active board</p>
+                        {% include "components/bingo_board.html" %}
+                    </div>
+                </section>
+            </section>
+
+            <aside class="mission-shell">
+                <section class="panel briefing-card">
+                    <p class="section-title">Field notes</p>
+                    <p class="briefing-copy">
+                        Look for conversation openings, not checkboxes. The best boards fill because someone asks one good question and the whole room starts moving.
+                    </p>
+                    <div class="status-row">
+                        <span class="status-pill">Short rounds</span>
+                        <span class="status-pill">Easy reset</span>
+                        <span class="status-pill">Workshop-friendly</span>
+                    </div>
+                </section>
+
+                <section class="panel intel-card">
+                    <p class="section-title">Run of play</p>
+                    <ol class="mini-list">
+                        <li>
+                            <span class="list-index">1</span>
+                            <span>Use the board as a prompt deck for real introductions.</span>
+                        </li>
+                        <li>
+                            <span class="list-index">2</span>
+                            <span>Mark only when you have found a genuine match.</span>
+                        </li>
+                        <li>
+                            <span class="list-index">3</span>
+                            <span>When you hit bingo, keep playing and widen the network.</span>
+                        </li>
+                    </ol>
+                    <p class="footer-note">Built for mixers, demos, and Copilot agent labs.</p>
+                </section>
+            </aside>
+        </div>
     </div>
+
+    {% if session.show_bingo_modal %}
+        {% include "components/bingo_modal.html" %}
     {% endif %}
-
-    <!-- Board -->
-    <div class="flex-1 flex items-center justify-center p-3">
-        {% include "components/bingo_board.html" %}
-    </div>
-</div>
-
-{% if session.show_bingo_modal %}
-    {% include "components/bingo_modal.html" %}
-{% endif %}
 </div>
